@@ -3,52 +3,52 @@
 This project performs in-depth Exploratory Data Analysis (EDA) on the Telco Customer Churn dataset.
 The goal is to understand customer behavior, identify key drivers of churn, and prepare the data for further modeling.
 
-🔍 Project Objectives
+🔍 Project Objectives :
 
-Understand dataset structure
+--> Understand dataset structure
 
-Handle missing values
+--> Handle missing values
 
-Create new features (tenure groups)
+--> Create new features (tenure groups)
 
-Explore distributions of predictors
+--> Explore distributions of predictors
 
-Analyze churn patterns
+--> Analyze churn patterns
 
-Visualize relationships between variables
+--> Visualize relationships between variables
 
-📁 Dataset
+📁 Dataset :
 
 File: WA_Fn-UseC_-Telco-Customer-Churn.csv
 Contains 7,043 customer records with 21 features, including:
 
-Demographics
+--> Demographics
 
-Services subscribed
+--> Services subscribed
 
-Account information
+--> Account information
 
-Billing patterns
+--> Billing patterns
 
-Churn status
+--> Churn status
 
-🛠️ Technologies Used
+🛠️ Technologies Used :
 
-Python
+--> Python
 
-Pandas
+--> Pandas
 
-NumPy
+--> NumPy
 
-Matplotlib
+--> Matplotlib
 
-Seaborn
+--> Seaborn
 
-Jupyter Notebook
+--> Jupyter Notebook
 
-⚙️ Installation
+⚙️ Installation :
 
-Clone the repo:
+--> Clone the repo:
 
 git clone https://github.com/<your-username>/<your-repo-name>.git
 
@@ -63,7 +63,7 @@ Run Jupyter Notebook:
 jupyter notebook
 
 📊 Key EDA Steps Performed
-1. Data Summary
+1. Data Summary :
 
 .info() to check datatypes
 
@@ -71,7 +71,7 @@ jupyter notebook
 
 Identify incorrect dtypes (TotalCharges as object)
 
-2. Missing Value Treatment
+2. Missing Value Treatment :
 
 Calculated missing %
 
@@ -79,34 +79,34 @@ Only 0.15% values missing in TotalCharges
 
 Dropped missing records (safe due to small impact)
 
-3. Feature Engineering
+3. Feature Engineering :
 
 Created tenure groups (1–12 months, 13–24, …, 61–72):
 
 telco_data['tenure_group'] = pd.cut(...)
 
-4. Univariate & Bivariate Analysis
+4. Univariate & Bivariate Analysis :
 
-Countplots of categorical variables
+--> Countplots of categorical variables
 
-Churn distribution by predictors
+--> Churn distribution by predictors
 
-Tenure vs Churn
+--> Tenure vs Churn
 
-Contract vs Churn
+--> Contract vs Churn
 
-Internet Service vs Churn
+--> Internet Service vs Churn
 
-Histograms and barplots
+-->Histograms and barplots
 
-📈 Insights
+📈 Insights :
 
-Month-to-month contract customers churn the most
+--> Month-to-month contract customers churn the most
 
-Long-tenure customers have low churn
+--> Long-tenure customers have low churn
 
-Fiber optic users show higher churn
+--> Fiber optic users show higher churn
 
-Automatic payment methods reduce churn
+--> Automatic payment methods reduce churn
 
-Senior Citizen and gender show weaker correlation
+--> Senior Citizen and gender show weaker correlation
